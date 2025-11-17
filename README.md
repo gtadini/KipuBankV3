@@ -50,3 +50,10 @@ The primary design shift introduces a reliance on **Uniswap V2** instead of a pr
 1.  **Reliance on Protocol & Liquidity:** The bank's health is now tied to the liveness of the Uniswap V2 Router and the liquidity of the relevant pairs (e.g., WETH/USDC, DAI/USDC). Price discovery and conversion happen in a single atomic transaction.
 2.  **Slippage Handling:** To maintain simple deposit functions, the `amountOutMin` for all swaps is hardcoded to `1`. This is a significant trade-off: it prevents a swap from failing entirely (0 output), but it **does not protect the user from high price slippage** in volatile markets or low-liquidity pools. A production-grade contract would require the user to pass their own `_amountOutMin` parameter.
 3.  **Withdrawal Function:** The V2 function signature `withdraw(address _token, ...)` was intentionally preserved. This maintains interface consistency but creates a specific user experience: users *must* call `withdraw(USDC_ADDRESS, ...)` to retrieve their funds, as calls for any other token will fail with `KipuBank_InsufficientFunds`.
+## Deployed Contract Address
+
+| Network | Address |
+| :--- | :--- |
+| **Testnet (Sepolia)** | `0xb055a8e014a4E7b328114716Eb4E4BDDF4F8f375` |
+
+**Block Explorer:** `https://sepolia.etherscan.io/address/0xb055a8e014a4E7b328114716Eb4E4BDDF4F8f375`

@@ -27,8 +27,8 @@ The contract requires **five** constructor arguments to link it to the DeFi ecos
 | :--- | :--- | :--- | :--- |
 | `_bankCapInUSD` | `uint256` | `1000000000000` | The **maximum total value (in 6 decimals USD)** the bank can hold. |
 | `_initialAdmin` | `address` | `0x...` | The wallet address receiving the `DEFAULT_ADMIN_ROLE` and `MANAGER_ROLE`. |
-| `_router` | `address` | `0xC5321161A7466D74B70A37634038424B2755D9C0` | The **Uniswap V2 Router** address. |
-| `_usdc` | `address` | `0x1c7D4B196Cb0C7B01d743Fbc6116399B403B0364` | The **USDC token address** (6 decimals). |
+| `_router` | `address` | `0xC532a74256D3Db42D0Bf7a0400fEFDbad7694008` | The **Uniswap V2 Router** address. |
+| `_usdc` | `address` | `0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238` | The **USDC token address** (6 decimals). |
 | `_weth` | `address` | `0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14` | The **Wrapped ETH (WETH)** address. |
 
 ## How to Interact with KipuBank V3

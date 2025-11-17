@@ -43,7 +43,7 @@ The contract requires **five** constructor arguments to link it to the DeFi ecos
 
 * **`managerWithdrawTreasury(address _token)`:** Allows a manager to sweep the treasury balance. This is critical for withdrawing the bank's primary USDC holdings or rescuing any other tokens accidentally sent or failed during a swap.
 
-## 📐 Design Decisions & Trade-offs
+## Design Decisions & Trade-offs
 
 The primary design shift introduces a reliance on **Uniswap V2** instead of a price oracle.
 

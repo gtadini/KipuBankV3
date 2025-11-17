@@ -15,7 +15,7 @@ It enables users to deposit **native ETH or any ERC-20 token**, automatically **
     * `depositERC20()` checks if the token is USDC (credits directly) or another token (uses `swapExactTokensForTokens`).
 * **Preserved Access Control:** OpenZeppelin's `AccessControl` is maintained, with the `MANAGER_ROLE` governing treasury functions. The `withdraw` function is also preserved, but by design, it will now only succeed for withdrawing USDC.
 
-## ⚙️ Deployment and Initialization Instructions
+## Deployment and Initialization Instructions
 
 The `KipuBankV3` contract is designed for deployment on an EVM-compatible testnet like **Sepolia**.
 
